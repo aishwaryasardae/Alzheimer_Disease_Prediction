@@ -42,34 +42,34 @@ Converting data to the necessary types
 Exploratory Data Analysis and Visualization
 Visualizations were conducted between different attributes to understand the relationships between parameters, which helps in feature selection and understanding the data distribution.
 
-# MODELING
+## MODELING
 The goal is to predict whether a person is positive or negative for Alzheimer's disease. The following machine learning algorithms were used:
 
-# LASSO REGRESSION:
+## LASSO REGRESSION:
 Achieved an accuracy of 81.67%.
 'Alpha' tuning parameter held constant at 1.
 
- # K-NEAREST NEIGHBOR (KNN):
+ ## K-NEAREST NEIGHBOR (KNN):
  Highest accuracy achieved was 81.9% with k=1.
 
- # SUPPORT VECTOR MACHINE (SVM):
+ ## SUPPORT VECTOR MACHINE (SVM):
  Achieved an accuracy of 85.41%.
 'Sigma' tuning parameter held constant at 0.097 and 'C' at 8.
 
-# DECISION TREE:
+## DECISION TREE:
 Achieved an accuracy of 75.87%.
 
 
-# RANDOM FOREST:
+## RANDOM FOREST:
 
 Highest accuracy achieved was 90.62%.
 Key features: MMSE, EDUC, nWBV.
 Error decreases with an increase in the number of trees.
 
-# CONCLUSION
+## CONCLUSION
 The Random Forest model emerged as the most accurate, achieving an accuracy of 90.62%. This model can be effectively used for Alzheimer's detection, providing a reliable tool for early diagnosis.
 
-# Installation
+## Installation
 To run this project, you'll need R and the following libraries:
 
 1. caret
@@ -79,10 +79,10 @@ To run this project, you'll need R and the following libraries:
 5. ggplot2
 6. dplyr
 
-# Usage
+## Usage
 Load the dataset and run the preprocessing steps to clean the data. Then, train the models using the provided code and compare their accuracies to select the best model.
 
-# Acknowledgements
+## Acknowledgements
 This project uses the OASIS dataset. We acknowledge the Open Access Series of Imaging Studies for providing the dataset for scientific and clinical research.
 
 
