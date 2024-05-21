@@ -45,28 +45,28 @@ Visualizations were conducted between different attributes to understand the rel
 ## MODELING
 The goal is to predict whether a person is positive or negative for Alzheimer's disease. The following machine learning algorithms were used:
 
-### LASSO REGRESSION:
+### Lasso Regression:
 Achieved an accuracy of 81.67%.
 'Alpha' tuning parameter held constant at 1.
 
- ### K-NEAREST NEIGHBOR (KNN):
+ ### K-Nearest Neighbor (KNN):
  Highest accuracy achieved was 81.9% with k=1.
 
- ### SUPPORT VECTOR MACHINE (SVM):
+ ### Support Vector Machine (SVM):
  Achieved an accuracy of 85.41%.
 'Sigma' tuning parameter held constant at 0.097 and 'C' at 8.
 
-### DECISION TREE:
+### Decision Tree:
 Achieved an accuracy of 75.87%.
 
 
-### RANDOM FOREST:
+### Random Forest:
 
 Highest accuracy achieved was 90.62%.
 Key features: MMSE, EDUC, nWBV.
 Error decreases with an increase in the number of trees.
 
-### CONCLUSION
+### Conclusion
 The Random Forest model emerged as the most accurate, achieving an accuracy of 90.62%. This model can be effectively used for Alzheimer's detection, providing a reliable tool for early diagnosis.
 
 ### Installation
