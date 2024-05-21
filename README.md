@@ -6,12 +6,12 @@ This project leverages MRI data from the OASIS (Open Access Series of Imaging St
 
 Alzheimer’s is a progressive brain disorder characterized by memory loss and cognitive decline. Detecting it early is crucial for managing and potentially mitigating its impact. This project aims to identify Alzheimer's disease and determine its severity through analysis of MRI scans.
 
-__Dataset__
+## __DATASET__
 The dataset used is oasis_longitudinal.csv from OASIS. It contains 371 observations and 15 variables, including demographic information, clinical data, and MRI-derived measures.
 
-__Structure of the Dataset__
+# __STRUCTURE OF DATASET__
 
-## Dataset Structure
+
 
 | VARIABLE  | TYPE | DESCRIPTION                                      |
 |-----------|------|--------------------------------------------------|
@@ -32,43 +32,44 @@ __Structure of the Dataset__
 | ASF       | num  | Atlas Scaling Factor                              |
 
 
-Data Cleaning
+# __DATA CLEANING__
 Data cleaning involves locating and eliminating inaccurate or flawed data to ensure the integrity and accuracy of the dataset. The steps taken include:
 
-Managing missing values
-Removing unwanted columns
+# __MANAGING MISSING VALUES__
+
+## __Removing unwanted columns__
 Converting data to the necessary types
 Exploratory Data Analysis and Visualization
 Visualizations were conducted between different attributes to understand the relationships between parameters, which helps in feature selection and understanding the data distribution.
 
-Modeling
+# MODELING
 The goal is to predict whether a person is positive or negative for Alzheimer's disease. The following machine learning algorithms were used:
 
-Lasso Regression:
+# LASSO REGRESSION:
 Achieved an accuracy of 81.67%.
 'Alpha' tuning parameter held constant at 1.
 
- K-Nearest Neighbor (KNN):
+ # K-NEAREST NEIGHBOR (KNN):
  Highest accuracy achieved was 81.9% with k=1.
 
- Support Vector Machine (SVM):
+ # SUPPORT VECTOR MACHINE (SVM):
  Achieved an accuracy of 85.41%.
 'Sigma' tuning parameter held constant at 0.097 and 'C' at 8.
 
-Decision Tree:
+# DECISION TREE:
 Achieved an accuracy of 75.87%.
 
 
-Random Forest:
+# RANDOM FOREST:
 
 Highest accuracy achieved was 90.62%.
 Key features: MMSE, EDUC, nWBV.
 Error decreases with an increase in the number of trees.
 
-Conclusion
+# CONCLUSION
 The Random Forest model emerged as the most accurate, achieving an accuracy of 90.62%. This model can be effectively used for Alzheimer's detection, providing a reliable tool for early diagnosis.
 
-Installation
+# Installation
 To run this project, you'll need R and the following libraries:
 
 1. caret
@@ -78,10 +79,10 @@ To run this project, you'll need R and the following libraries:
 5. ggplot2
 6. dplyr
 
-Usage
+# Usage
 Load the dataset and run the preprocessing steps to clean the data. Then, train the models using the provided code and compare their accuracies to select the best model.
 
-Acknowledgements
+# Acknowledgements
 This project uses the OASIS dataset. We acknowledge the Open Access Series of Imaging Studies for providing the dataset for scientific and clinical research.
 
 
