@@ -1,4 +1,4 @@
-setwd('C://Users/prakh/Downloads/Docs/Study/Sem 3/IE 7280 Stats Xie Wei/Project')
+
 df <- read.csv("oasis_longitudinal.csv")
 df
 
